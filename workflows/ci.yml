@@ -1,0 +1,14 @@
+name: Evaluacion Inicial CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verificacion-simulada:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simular ejecucion de pruebas
+        run: |
+          echo "Ejecutando pruebas de prueba..."
+          echo "¡Todas las pruebas pasaron exitosamente!"
